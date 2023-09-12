@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 50vw;
+}
+
+/*INICIO HEADER--------------------------------------------------------------*/
+
+/* Estilo para el header */
+header {
+    background-color: #4200ff;
+    padding: 20px 0;
+}
+
+/* Centrar el contenido del header */
+nav {
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Estilo para la lista de navegación */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para los elementos de la lista */
+li {
+    display: inline;
+    margin: 0 40px;
+}
+
+/* Estilo para los enlaces */
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+/* Estilos para hacer el header responsive */
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        font-size: 2vw;
+    }
+}
+
+/*FIN HEADER-------------------------------------------------------------------*/
+
+
+/*INICIO BODY------------------------------------------------------------------*/
+
+/*IMAGEN*/
+
+.imagen {
+    width: 40vw;
+}
+
+.imagen img {
+    position: relative;
+    align-items: center;
+    height: 50vw;
+    float: left;
+}
+
+/*TEXTO*/
+
+.content {
+    width: 60vw;
+}
+
+.content p {
+    width: 60vw;
+    position: relative;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    left: 64%;
+    margin-top: -56%;
+}
+
+.content h1 {
+    width: 60vw;
+    position: relative;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2vw;
+    right: -64%;
+    margin-top: -66%;
+}
+
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #4200ff;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50%;
+    font-size: 1.1vw;
+}
+
+.container {
+    position: relative;
+    margin-top: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Estilos para la sección de información de contacto */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de copyright */
+.copyright {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+/* Estilos para hacerlo responsive */
+@media (max-width: 768px) {
+
+    .contact-info,
+    .copyright {
+        flex: 100%;
+        text-align: center;
+        font-size: 2vw;
+    }
+    .copyright img{
+        margin-right: 2%;
+    }
+}
